@@ -98,7 +98,7 @@ public class TemperatureApp extends IOIOActivity {
 				DecimalFormat df = new DecimalFormat("#.#");
 	    		setText(df.format(temperature));
 				led_.write(!toggleButton_.isChecked());
-				Thread.sleep(10);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				ioio_.disconnect();
 			} catch (ConnectionLostException e) {
