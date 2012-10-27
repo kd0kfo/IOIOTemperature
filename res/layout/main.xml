@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20px" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5px"
+            android:text="@string/analog_label" />
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+	</LinearLayout>
+
+	<RadioGroup
+	    android:id="@+id/radioGroup1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	    <RadioButton
+	        android:id="@+id/btn_fahrenheit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="@string/label_fahrenheit" 
+	        android:onClick="radio_btn_click" />
+
+	    <RadioButton
+	        android:id="@+id/btn_celcius"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_celcius" 
+	        android:onClick="radio_btn_click"  />
+
+	    <RadioButton
+	        android:id="@+id/btn_kelvin"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/label_kelvin" 
+	        android:onClick="radio_btn_click"  />
+	</RadioGroup>
+
+	<ToggleButton
+	    android:id="@+id/ToggleButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="20px"
+	    android:textOff="Led is OFF"
+	    android:textOn="Led is ON" />
+
+</LinearLayout>

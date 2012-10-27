@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Temperature</string>
+    <string name="seekbar_label">Move to control the position:</string>
+    <string name="analog_label">Temperature:</string>
+    <string-array name="temp_units">
+        <item>Fahrenheit</item>
+        <item>Celcius</item>
+        <item>Kelvin</item>
+    </string-array>
+        <string name="label_fahrenheit">Fahrenheit</string>
+        <string name="label_celcius">Celcius</string>
+        <string name="label_kelvin">Kelvin</string>
+</resources>
